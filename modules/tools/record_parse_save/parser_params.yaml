@@ -1,0 +1,23 @@
+records:
+    filepath: /apollo/data/bag/calib_camera2lidar/
+
+parse: camera
+# use one of the following options or add more:
+  # lidar
+  # radar
+  # camera
+
+lidar:     # for RSHELIOS lidar 32
+  channel_name: /apollo/sensor/lidar32/PointCloud2
+  out_folder_extn: _lidar_rshelios32
+  timestamp_file_extn: _lidar_rshelios32_timestamp.txt
+
+radar:     # for ARS-408 radar mounted in front
+  channel_name: /apollo/sensor/radar/front
+  out_folder_extn: _radar_conti408_front
+  timestamp_file_extn: _radar_conti408_front_timestamp.txt
+
+camera:   # for 6mm camera mounted in front
+  channel_name: /apollo/sensor/camera/front_6mm/image/compressed
+  out_folder_extn: _camera_6mm_front
+  timestamp_file_extn: _camera_6mm_front_timestamp.txt

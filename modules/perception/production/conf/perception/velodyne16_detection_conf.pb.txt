@@ -1,0 +1,5 @@
+sensor_name: "velodyne16"
+enable_hdmap: true
+lidar_query_tf_offset: 0 #通过增加此处值来同步lidar和imu的时间
+lidar2novatel_tf2_child_frame_id: "lidar32"
+output_channel_name: "/perception/inner/DetectionObjects"

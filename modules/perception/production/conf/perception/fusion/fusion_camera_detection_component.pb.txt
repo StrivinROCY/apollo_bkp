@@ -1,0 +1,2 @@
+output_final_obstacles : true
+output_obstacles_channel_name : "/perception/obstacles"
